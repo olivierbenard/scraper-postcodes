@@ -14,7 +14,7 @@ class QuotesSpider(scrapy.Spider):
         base = "http://germany.postcode.info/"
 
         # collection of all postcodes
-        file = open('../postcodes.list', 'r')
+        file = open('../results/postcodes.list', 'r')
         postcodes = (line.replace('\n', '') for line in file.readlines())
         file.close()
 
@@ -62,7 +62,7 @@ class QuotesSpider(scrapy.Spider):
         page = response.url
         html = response.body
         soup = BeautifulSoup(html, 'html.parser')
-        with open('postcodes.de', 'a') as file:
+        with open('../results/postcodes.de', 'a') as file:
             data = parse_page(soup)
             file.write('\n'.join(','.join(item) for item in data) + '\n')
         file.close()
