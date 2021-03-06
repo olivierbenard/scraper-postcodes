@@ -12,10 +12,10 @@
 Scrap the website http://germany.postcode.info/ and collect all postcode information in a comma (',') separated file (`./scraper/postcodes.de`) for Germany.
 The results contains the following information:
 
-* Ort
-* 5-digits postcode
-* Lander
-* Kreise
+* Municipality (Ort)
+* 5-digits postcode (Plz)
+* State (Lander)
+* District (Kreise)
 * GPS coordinates Latitude
 * GPS coordinates Longitude
 
@@ -45,7 +45,7 @@ Link the data with interractive geo-maping:
 * Some major cities does not have Kreise (Kreisefrei)
 * There are around 11,000 municipalities in Germany
 * The generated files contains 16,481 rows
-* With `scrapy`, the scraper runs in 3 minutes instead of 9h
+* With `scrapy`, the scraper runs in 3 minutes instead of 9 hours
 
 ## Ressources
 
