@@ -12,9 +12,9 @@ The results contains the following information:
 * GPS coordinates Longitude
 * GPS coordinates Latitude
 
-e.g.:
+## Example
 
-Mommenheim,55278,Rheinland-Pfalz,Mainz-Bingen,49.8803,8.265_
+```Mommenheim,55278,Rheinland-Pfalz,Mainz-Bingen,49.8803,8.265```
 
 ## Perspectives
 
