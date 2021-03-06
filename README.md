@@ -27,7 +27,7 @@ Link the data with interractive geo-maping:
 
 ## Quickstart - Set-up
 
-1. `pip freeze -r requirements.txt`
+1. `pip install -r requirements.txt`
 2. `cd ./scraper`
 3. `scraper crawl postcodes`
 
