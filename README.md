@@ -45,7 +45,7 @@ Link the data with interractive geo-maping:
 * Some major cities does not have Kreise (Kreisefrei)
 * There are around 11,000 municipalities in Germany
 * The generated files contains 16,481 rows
-* With scrapy, the scraper runs in 3min instead of 9h
+* With `scrapy`, the scraper runs in 3 minutes instead of 9h
 
 ## Ressources
 
