@@ -9,7 +9,7 @@
 
 ## The long story short
 
-Scrap the website http://germany.postcode.info/ and collect all postcode information in a comma (',') separated file (`./scraper/postcodes.de`) for Germany.
+Scrap the website http://germany.postcode.info/ and collect all postcode information in a semicolon (';') separated file (`./scraper/postcodes.de`) for Germany.
 The results contains the following information:
 
 * Municipality (Ort)
@@ -21,7 +21,7 @@ The results contains the following information:
 
 ## Example
 
-```Mommenheim,55278,Rheinland-Pfalz,Mainz-Bingen,49.8803,8.265```
+```Mommenheim;55278;Rheinland-Pfalz;Mainz-Bingen;49.8803;8.265```
 
 ## Business Perspectives
 

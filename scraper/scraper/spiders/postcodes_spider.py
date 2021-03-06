@@ -53,7 +53,7 @@ class QuotesSpider(scrapy.Spider):
                         if i_line == 3: # Lander
                             line.append(content.strip())
                         if i_line == 4: # Kreise + GPS Lat, Long
-                            matched = re.findall(r'^,([^,]*)[^\d]*(\d{1,}.?\d{0,})[^\d]*(\d{1,}.?\d{0,})', content)
+                            matched = re.findall(r'^,([^,]*)[^\d]*(\d{1,}\.?\d{0,})[^\d]*(\d{1,}\.?\d{0,})', content)
                             temp = [line.append(item.strip()) for item in matched[0]]
                 except:
                     break
@@ -64,5 +64,5 @@ class QuotesSpider(scrapy.Spider):
         soup = BeautifulSoup(html, 'html.parser')
         with open('../results/postcodes.de', 'a') as file:
             data = parse_page(soup)
-            file.write('\n'.join(','.join(item) for item in data) + '\n')
+            file.write('\n'.join(';'.join(item) for item in data) + '\n')
         file.close()
