@@ -53,8 +53,8 @@ class QuotesSpider(scrapy.Spider):
                         if i_line == 3: # Lander
                             line.append(content.strip())
                         if i_line == 4: # Kreise + GPS Lat, Long
-                            matched = re.findall(r'^,([^,]*)[^\d]*(\d{1,}\.?\d{0,})[^\d]*(\d{1,}\.?\d{0,})', content)
-                            temp = [line.append(item.strip()) for item in matched[0]]
+                            matched = re.findall(r'^,(.*)GPS[^\d]*(\d{1,}\.?\d{0,})[^\d]*(\d{1,}\.?\d{0,})', content)
+                            temp = [line.append(item.replace(',', '').strip()) for item in matched[0]]
                 except:
                     break
             return lines
